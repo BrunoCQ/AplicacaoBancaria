@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./resources/templates/layout.xhtml"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+
+
+    <ui:define name="content">
+        Digite os dados abaixo para realizar o depósito:
+        <h:panelGrid columns="2" cellpadding="5">
+
+            <p:outputLabel for="nome" value="Nome" />
+            <p:inputText id="nome" />
+
+            <p:outputLabel for="banco" value="Banco" />
+            <p:inputText id="banco" />
+
+            <p:outputLabel for="agencia" value="Agência" />
+            <p:inputText id="agencia" />
+
+            <p:outputLabel for="conta" value="Come" />
+            <p:inputText id="conta" />
+
+            <p:outputLabel for="valor" value="Valor" />
+            <p:inputText id="valor" />
+        </h:panelGrid>
+         <p:commandButton value="Confirmar"/>
+    </ui:define>
+
+
+</ui:composition>
