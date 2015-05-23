@@ -1,8 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23/05/2015, 18:28:44
+    Author     : Bruno
+*/
+
 
 #top {
     position: relative;
-    background-color: black;
-    color: white;
+    background-color: #e6e5e4;
+    color: black;
     padding: 5px;
     margin: 0px 0px 10px 0px;
     border-bottom-color: coral;
@@ -12,7 +22,7 @@
 #bottom {
     position: fixed;
     bottom: 0px;
-    background-color: black;
+    background-color: #e6e5e4;
     padding: 5px;
     width: 1900px; margin-left:auto; margin-right:auto;
     height:100px;
@@ -23,7 +33,7 @@
 
 #left {
     float: left;
-    background-color: #000000;
+    background-color: #e6e5e4;
     padding: 5px;
     width: 150px;
     height:700px;
@@ -33,7 +43,7 @@
 
 #right {
     float: right;
-    background-color: #000000;
+    background-color: #e6e5e4;
     padding: 5px;
     width: 150px;
     height: 700px;
@@ -43,24 +53,24 @@
 
 .center_content {
     position: relative;
-    background-color: #000000;
+    background-color: #e6e5e4;
     padding: 5px;
 }
 
 .left_content {
-    background-color: #000000;
+    background-color: #e6e5e4;
     padding: 5px;
     margin-left: 170px;
 }
 
 .right_content {
-    background-color: #000000;
+    background-color: #e6e5e4;
     padding: 5px;
     margin: 0px 170px 0px 170px;
 }
 
 #top a:link, #top a:visited {
-  color: white;
+  color: black;
   font-weight : bold;
   text-decoration: none;
 }
