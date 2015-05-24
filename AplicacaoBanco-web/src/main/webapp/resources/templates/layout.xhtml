@@ -19,13 +19,9 @@
 
         <div id="top">
             <ui:insert name="top">
-                <p:graphicImage name="./imagens/AJB.png" width="200px" height="100px"/>
-                Bem vindo, "Usuário".
-                <h:outputText value="#{session.lastAccessedTime}">
-                    <f:convertDateTime pattern="dd/MM/yyyy" type="date" />
-                </h:outputText>
+                <p:link href="sistemabancario.xhtml"><p:graphicImage name="./imagens/banco_ajb_branco_transparente.png" width="200px" height="100px"/></p:link>
                 <h:form>
-                    <p:menubar style="width: 1600px; margin-left:auto; margin-right:auto; margin-top: 100px; ">
+                    <p:menubar style="width: 100%; margin-left:auto; margin-right:auto; margin-top: 10px; ">
                         <p:menuitem value="Saldo" url="saldo.xhtml" style="color: #000000; font-weight: bold" />
                         <p:menuitem value="Extrato" url="extrato.xhtml" style="color: #000000; font-weight: bold"  />
                         <p:menuitem value="Saque" url="saque.xhtml" style="color: #000000; font-weight: bold" />
@@ -46,7 +42,14 @@
         </div>
         <div>
             <div id="left">
-                <ui:insert name="left" >Bem vindo, "usuário" <br/> Agência: 1111 <br/> Conta: 2222222-2 <br/> E-mail: usuario@email.com
+                <ui:insert name="left" >
+                    Bem vindo, <b>"usuário"</b> <br/> 
+                    Agência: 1111 <br/> 
+                    Conta: 2222222-2 <br/> 
+                    E-mail: usuario@email.com <br/>
+                    Último acesso: <h:outputText value="#{session.lastAccessedTime}">
+                        <f:convertDateTime dateStyle="short" locale="pt_BR" timeZone="America/Sao_Paulo" type="both" />
+                    </h:outputText>
                 </ui:insert>
             </div>
             <div>
@@ -59,7 +62,7 @@
             </div>
         </div>
         <div id="bottom">
-            <ui:insert name="bottom">Bottom</ui:insert>
+            <ui:insert name="bottom">Copyright &copy; 2015 Banco AJB. Todos os direitos reservados</ui:insert>
         </div>
 
     </h:body>

@@ -8,20 +8,21 @@
     <ui:define name="title">Banco AJB - Tranferência Interna</ui:define>
 
     <ui:define name="content">
-        Digite os dados abaixo para realizar o depósito:
+        Digite os dados abaixo para realizar a transferência:
         <h:panelGrid columns="2" cellpadding="5">
 
-            <p:outputLabel for="nome" value="Nome" />
+            <p:outputLabel style="font-size: medium" for="nome" value="Nome" />
             <p:inputText id="nome" />
 
-            <p:outputLabel for="agencia" value="Agência" />
+            <p:outputLabel style="font-size: medium" for="agencia" value="Agência" />
             <p:inputText id="agencia" />
 
-            <p:outputLabel for="conta" value="Come" />
+            <p:outputLabel style="font-size: medium" for="conta" value="Conta" />
             <p:inputText id="conta" />
 
-            <p:outputLabel for="valor" value="Valor" />
+            <p:outputLabel style="font-size: medium" for="valor" value="Valor" />
             <p:inputText id="valor" />
+            
         </h:panelGrid>
          <p:commandButton value="Confirmar"/>
     </ui:define>
