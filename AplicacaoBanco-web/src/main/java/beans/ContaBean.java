@@ -7,38 +7,71 @@ package beans;
 
 import java.math.BigDecimal;
 import java.util.List;
-
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.ejb.EJB;
-import javax.enterprise.context.RequestScoped;
-
 import dao.ContaDao;
 import entidades.Conta;
 import componentes.VerificarSaldo;
+import java.io.Serializable;
+import javax.enterprise.context.SessionScoped;
 
 /**
  *
  * @author Bruno
  */
 @Named(value = "contaBean")
-@RequestScoped
-public class ContaBean {
-	
+@SessionScoped
+public class ContaBean implements Serializable {
+	float saldo;
+        String conta;
+        int senha;
+        String agencia;
+        
+        
 	// Instancia o objeto automaticamente
 	@EJB
 	private VerificarSaldo verificarSaldo;
 	
-	@Inject
-	private Conta conta;
+	//@Inject
+	//private Conta conta;
 	
     List<HistoricoBean> extrato;
+    
+    public float verificarSaldo() {
+        return verificarSaldo.verificarSaldo(conta);
+    }
+
+    public String getConta() {
+        return conta;
+    }
+
+    public void setConta(String conta) {
+        this.conta = conta;
+    }
+
+    public int getSenha() {
+        return senha;
+    }
+
+    public void setSenha(int senha) {
+        this.senha = senha;
+    }
+
+    public String getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(String agencia) {
+        this.agencia = agencia;
+    }
+    
     
     
     public void sacar() {
     	// Pegar valor da tela
     	
-    	BigDecimal saldo = conta.getSaldo();
+    	//BigDecimal saldo = conta.getSaldo();
     	
     	//BigDecimal novoSaldo = saldo - (new BigDecimal(12.0));
     	

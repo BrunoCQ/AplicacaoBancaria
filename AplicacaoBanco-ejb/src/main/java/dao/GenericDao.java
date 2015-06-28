@@ -44,6 +44,10 @@ public abstract class GenericDao   <T, I extends Serializable>{
 		return em.find(classe, id);
 	}
 	
+        public T byConta(String conta){
+            return em.find(classe, conta);
+        }
+        
 	public List<T> findAll() {
 		TypedQuery<T> query = em.createNamedQuery("from "+ classe, classe);
 		return query.getResultList();

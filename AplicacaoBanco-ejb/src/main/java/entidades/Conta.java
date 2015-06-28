@@ -13,6 +13,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
@@ -20,37 +22,83 @@ import javax.persistence.OneToOne;
  *
  * @author Bruno
  */
+@NamedQueries({
+    @NamedQuery(name = "buscaSaldo", query = "select saldo from Conta c where c.conta =:conta"),
+})
 @Entity
 public class Conta implements Serializable {
+
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private String conta;
     @Column
-	private Cliente cliente;
+    private Cliente cliente;
 
-	@Column
-	private BigDecimal saldo;
+    @Column
+    private float saldo;
+    
+    @Column
+    private int senha;
 
-	@Column
-	@OneToOne
-	private Agencia agencia;
+    @Column
+    @OneToOne
+    private Agencia agencia;
 
-	@OneToMany
-	private List<ContaInvestimento> contaInvestimentos;
+    @OneToMany
+    private List<ContaInvestimento> contaInvestimentos;
 
-    public Long getId() {
-        return id;
+    public String getConta() {
+        return conta;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public float getSaldo() {
+        return saldo;
     }
+
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public Agencia getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(Agencia agencia) {
+        this.agencia = agencia;
+    }
+
+    public List<ContaInvestimento> getContaInvestimentos() {
+        return contaInvestimentos;
+    }
+
+    public void setContaInvestimentos(List<ContaInvestimento> contaInvestimentos) {
+        this.contaInvestimentos = contaInvestimentos;
+    }
+
+    public int getSenha() {
+        return senha;
+    }
+
+    public void setSenha(int senha) {
+        this.senha = senha;
+    }
+
+ 
+
+
 
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (id != null ? id.hashCode() : 0);
+        hash += (conta != null ? conta.hashCode() : 0);
         return hash;
     }
 
@@ -61,7 +109,7 @@ public class Conta implements Serializable {
             return false;
         }
         Conta other = (Conta) object;
-        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
+        if ((this.conta == null && other.conta != null) || (this.conta != null && !this.conta.equals(other.conta))) {
             return false;
         }
         return true;
@@ -69,7 +117,7 @@ public class Conta implements Serializable {
 
     @Override
     public String toString() {
-        return "entidades.Conta[ id=" + id + " ]";
+        return "entidades.Conta[ id=" + conta + " ]";
     }
-    
+
 }

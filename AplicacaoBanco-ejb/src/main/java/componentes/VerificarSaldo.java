@@ -6,6 +6,8 @@
 package componentes;
 
 import dao.ContaDao;
+import entidades.Conta;
+import exceptions.SaldoNegativoException;
 import java.math.BigDecimal;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
@@ -23,16 +25,17 @@ public class VerificarSaldo  {
 	@Inject
 	private ContaDao dao;
 
-	public void verificarSaldo(Long id, BigDecimal valor) throws SaldoNegativoException {
+	public float verificarSaldo(String conta){ // throws SaldoNegativoException 
 		
-		Conta conta = dao.byId(id);
-		int temSaldo = valor.compareTo(conta.getSaldo());
+		Conta contaDao = dao.byConta(conta);
+                return contaDao.getSaldo();
+		/*int temSaldo = valor.compareTo(conta.getSaldo());
 		
 		if(temSaldo < 0) {
 			throw new SaldoNegativoException();
 		} else {
 			// fazer metodo sacar
-		}
+		} */
 		
 	}
 }

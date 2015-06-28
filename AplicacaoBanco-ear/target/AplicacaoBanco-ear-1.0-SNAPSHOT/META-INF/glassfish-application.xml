@@ -1,3 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glassfish-application PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Java EE Application 6.0//EN" "http://glassfish.org/dtds/glassfish-application_6_0-1.dtd">
+
+<resources>
+<jdbc-connection-pool ... name="derby_net_BancoAJB_Pool“ ...>
+<property name="serverName" value="localhost"/>
+<property name="portNumber" value="1527"/>
+<property name="databaseName" value="BancoAJB"/>
+<property name="User" value=""/>
+<property name="Password" value=""/>
+<property name="URL" value="jdbc:derby://localhost:1527/BancoAJB"/>
+<property name="driverClass" value="org.apache.derby.jdbc.ClientDriver"/>
+</jdbc-connection-pool>
+<jdbc-resource enabled="true" jndi-name="BancoAJB" object-type="user" pool-name="derby_net_BancoAJB_Pool"/>
+</resources>
 <glassfish-application/>

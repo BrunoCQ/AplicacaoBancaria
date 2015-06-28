@@ -1,1 +1,9 @@
-uff\NewSessionBean.class
+entidades\Extrato_.class
+entidades\Pagamento_.class
+entidades\Agencia_.class
+entidades\Banco_.class
+entidades\Operacao_.class
+entidades\Investimento_.class
+entidades\ContaInvestimento_.class
+entidades\Cliente_.class
+entidades\Transferencia_.class

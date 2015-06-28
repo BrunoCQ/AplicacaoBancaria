@@ -6,12 +6,13 @@
 package entidades;
 
 import java.io.Serializable;
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 
 /**
  *
@@ -21,27 +22,43 @@ import javax.persistence.OneToOne;
 public class Agencia implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private String agencia;
     @Column
-	@OneToOne
-	private Conta conta;
+	@OneToMany
+	private List<Conta> contas;
 	
 	@Column
 	private Banco banco;
-    
-    public Long getId() {
-        return id;
+
+    public String getAgencia() {
+        return agencia;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setAgencia(String agencia) {
+        this.agencia = agencia;
     }
+
+    public List<Conta> getContas() {
+        return contas;
+    }
+
+    public void setContas(List<Conta> contas) {
+        this.contas = contas;
+    }
+
+    public Banco getBanco() {
+        return banco;
+    }
+
+    public void setBanco(Banco banco) {
+        this.banco = banco;
+    }
+    
 
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (id != null ? id.hashCode() : 0);
+        hash += (agencia != null ? agencia.hashCode() : 0);
         return hash;
     }
 
@@ -52,7 +69,7 @@ public class Agencia implements Serializable {
             return false;
         }
         Agencia other = (Agencia) object;
-        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
+        if ((this.agencia == null && other.agencia != null) || (this.agencia != null && !this.agencia.equals(other.agencia))) {
             return false;
         }
         return true;
@@ -60,7 +77,7 @@ public class Agencia implements Serializable {
 
     @Override
     public String toString() {
-        return "entidades.Agencia[ id=" + id + " ]";
+        return "entidades.Agencia[ id=" + agencia + " ]";
     }
     
 }

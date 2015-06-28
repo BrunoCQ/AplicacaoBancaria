@@ -15,8 +15,7 @@ import javax.enterprise.context.RequestScoped;
 @Named(value = "agenciaBean")
 @RequestScoped
 public class AgenciaBean {
-    int id_agencia;
-    String nome;
+    String agencia;
     /**
      * Creates a new instance of AgenciaBean
      */
@@ -24,20 +23,12 @@ public class AgenciaBean {
         
     }
 
-    public int getId_agencia() {
-        return id_agencia;
+    public String getAgencia() {
+        return agencia;
     }
 
-    public void setId_agencia(int id_agencia) {
-        this.id_agencia = id_agencia;
+    public void setAgencia(String agencia) {
+        this.agencia = agencia;
     }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    
+   
 }

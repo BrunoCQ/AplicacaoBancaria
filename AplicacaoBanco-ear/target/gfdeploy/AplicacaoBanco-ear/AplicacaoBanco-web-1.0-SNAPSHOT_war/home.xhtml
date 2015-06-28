@@ -11,9 +11,9 @@
         <table>
             <tr align="left"><p:link href="home.xhtml"><p:graphicImage name="./imagens/banco_ajb_branco_transparente.png" width="200px" height="100px"/></p:link></tr>
             <tr align="right"><h:form>
-                    Agência: <h:inputText />
-                    Conta: <h:inputText />
-                    Senha: <h:inputSecret />
+                    Agência: <h:inputText value="#{contaBean.agencia}"/>
+                    Conta: <h:inputText value="#{contaBean.conta}" />
+                    Senha: <h:inputSecret value="#{contaBean.senha}" />
                     <p:commandButton value="Entrar" action="sistemabancario.xhtml"/>
                 </h:form></tr>
         </table>
