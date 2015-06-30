@@ -18,10 +18,10 @@
             <p:inputText id="agencia" />
 
             <p:outputLabel style="font-size: medium" for="conta" value="Conta" />
-            <p:inputText id="conta" />
+            <p:inputText id="conta" value ="#{contaBean.contaDest}" />
 
             <p:outputLabel style="font-size: medium" for="valor" value="Valor" />
-            <p:inputText id="valor" />
+            <p:inputText id="valor" value="#{contaBean.valorSaque}"/>
             
         </h:panelGrid>
          <p:commandButton value="Confirmar"/>

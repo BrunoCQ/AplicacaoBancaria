@@ -17,7 +17,7 @@ import java.io.Serializable;
 import javax.enterprise.context.SessionScoped;
 
 
-@Named(value = "contaBean")
+
 //@SessionScoped
 public class ContaBeanOld implements Serializable {
 	float saldo;

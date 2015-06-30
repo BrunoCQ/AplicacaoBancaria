@@ -23,14 +23,13 @@ import javax.persistence.Query;
  */
 @Stateless
 @LocalBean
-public class VerificarSaldo  {
+public class VerificarSaldo {
 
-        @PersistenceContext
-        private EntityManager em;
-        
-	public float verificarSaldo(String conta){ 
-		Query query  = em.createNamedQuery("buscaSaldo");
-                query.setParameter("conta", conta);
-                return query.getFirstResult();
-	}
+    @PersistenceContext
+    private EntityManager em;
+
+    public float verificarSaldo(String conta) {
+        Conta contaObj = em.find(Conta.class, conta);
+        return contaObj.getSaldo();
+    }
 }

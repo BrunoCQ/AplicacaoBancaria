@@ -4,7 +4,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package componentes;
 
 import entidades.Conta;
@@ -24,17 +23,32 @@ public class ValidarLogin implements ValidarLoginLocal {
     @PersistenceContext
     private EntityManager em;
     private List<Conta> conta;
-    
-    public boolean validaConta(String conta, String senha){
-        boolean x;
-        Query query = em.createNamedQuery("buscaConta");
-        query.setParameter("conta",conta);
-        query.setParameter("senha", senha);
-        this.conta = query.getResultList();
-        if (this.conta == null)
-            x = false;   
-        else 
-            x = true;
+
+    public boolean validaConta(String conta, String senha) {
+        boolean x = false;
+        Conta contaObj = em.find(Conta.class, conta);
+        if (contaObj != null) {
+            if (contaObj.getSenha().equals(senha)) {
+                x = true;
+            }
+        }else {
+            x = false;
+        }
         return x;
+
     }
 }
+    /*
+     Query query = em.createNamedQuery("buscaConta");
+     query.setParameter("conta", conta);
+     query.setParameter("senha", senha);
+     this.conta = query.getResultList();
+     if (this.conta == null) {
+     x = false;
+     } else {
+     x = true;
+     }
+     return x;
+     }
+     
+*/

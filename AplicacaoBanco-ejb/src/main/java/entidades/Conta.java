@@ -23,7 +23,7 @@ import javax.persistence.OneToOne;
  * @author Bruno
  */
 @NamedQueries({
-    //@NamedQuery(name = "buscaSaldo", query = "select saldo from Conta c where c.conta =:conta"),
+    @NamedQuery(name = "buscarConta", query = "select c from Conta c where c.conta =:conta"),
     @NamedQuery(name="buscaConta", query="select c from Conta c where c.conta=:conta and c.senha=:senha")
 })
 @Entity
@@ -39,7 +39,7 @@ public class Conta implements Serializable {
     private float saldo;
     
     @Column
-    private int senha;
+    private String senha;
 
     @Column
     @OneToOne
@@ -84,13 +84,15 @@ public class Conta implements Serializable {
         this.contaInvestimentos = contaInvestimentos;
     }
 
-    public int getSenha() {
+    public String getSenha() {
         return senha;
     }
 
-    public void setSenha(int senha) {
+    public void setSenha(String senha) {
         this.senha = senha;
     }
+
+  
 
  
 

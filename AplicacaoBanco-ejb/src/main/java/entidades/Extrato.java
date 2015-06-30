@@ -40,7 +40,7 @@ public class Extrato implements Serializable {
 	private String tipo;
 
 	@Column
-	private BigDecimal valor;
+	private float valor;
 
     public Long getId() {
         return id;
