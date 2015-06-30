@@ -12,6 +12,9 @@ import java.math.BigDecimal;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 /**
  *
@@ -21,21 +24,12 @@ import javax.inject.Inject;
 @LocalBean
 public class VerificarSaldo  {
 
-    
-	@Inject
-	private ContaDao dao;
-
-	public float verificarSaldo(String conta){ // throws SaldoNegativoException 
-		
-		Conta contaDao = dao.byConta(conta);
-                return contaDao.getSaldo();
-		/*int temSaldo = valor.compareTo(conta.getSaldo());
-		
-		if(temSaldo < 0) {
-			throw new SaldoNegativoException();
-		} else {
-			// fazer metodo sacar
-		} */
-		
+        @PersistenceContext
+        private EntityManager em;
+        
+	public float verificarSaldo(String conta){ 
+		Query query  = em.createNamedQuery("buscaSaldo");
+                query.setParameter("conta", conta);
+                return query.getFirstResult();
 	}
 }
