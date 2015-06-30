@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\NewSessionBean.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\dao\GenericDao.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Banco.java
@@ -24,6 +25,8 @@ C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\j
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\VerificarSaldo.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Investimento.java
 =======
+=======
+>>>>>>> origin/master
 D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Operacao.java
 D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\VerificarSaldo.java
 D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\ContaInvestimento.java
@@ -48,4 +51,7 @@ D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\ja
 D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\Depositar.java
 D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Investimento.java
 D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Conta.java
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master

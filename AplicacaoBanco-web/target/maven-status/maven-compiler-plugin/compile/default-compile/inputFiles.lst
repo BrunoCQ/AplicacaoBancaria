@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-web\src\main\java\beans\AgenciaBean.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-web\src\main\java\beans\ClienteBean.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-web\src\main\java\beans\HistoricoBean.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-web\src\main\java\beans\ContaBeanOld.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-web\src\main\java\beans\BancoBean.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-web\src\main\java\beans\ContaBean.java
+=======
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-web\src\main\java\beans\ContaBeanTeste.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-web\src\main\java\beans\BancoBean.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-web\src\main\java\beans\ClienteBean.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-web\src\main\java\beans\ContaBean.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-web\src\main\java\beans\AgenciaBean.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-web\src\main\java\beans\HistoricoBean.java
+>>>>>>> origin/master
