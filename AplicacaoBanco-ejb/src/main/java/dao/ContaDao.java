@@ -27,7 +27,7 @@ public class ContaDao extends GenericDao<Conta, Serializable> {
     public ContaDao() {
         super(Conta.class);
     }
-
+    
     public List<Conta> exemploBusca(Conta conta) {
 
         String sql = "select c from Conta c where c.saldo > :valor";

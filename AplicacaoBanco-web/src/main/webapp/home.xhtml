@@ -11,10 +11,10 @@
         <table>
             <tr align="left"><p:link href="home.xhtml"><p:graphicImage name="./imagens/banco_ajb_branco_transparente.png" width="200px" height="100px"/></p:link></tr>
             <tr align="right"><h:form>
-                    Agência: <h:inputText value="#{contaBeanTeste.agencia}"/>
-                    Conta: <h:inputText value="#{contaBeanTeste.conta}" />
-                    Senha: <h:inputSecret value="#{contaBeanTeste.senha}" />
-                    <p:commandButton value="Entrar" action="#{contaBeanTeste.validaLogin()}"/>
+                    Agência: <h:inputText value="#{contaBean.agencia}"/>
+                    Conta: <h:inputText value="#{contaBean.conta}" />
+                    Senha: <h:inputSecret value="#{contaBean.senha}" />
+                    <p:commandButton value="Entrar" action="#{contaBean.validaLogin()}"/>
                 </h:form></tr>
         </table>
                     
