@@ -11,6 +11,10 @@ import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
 import javax.ejb.EJB;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  *
@@ -30,9 +34,26 @@ public class ContaBean implements Serializable {
     public ContaBean() {
     }
 
+    /*public String login () {
+    FacesContext context = FacesContext.getCurrentInstance();
+    HttpServletRequest request = (HttpServletRequest) 
+        context.getExternalContext().getRequest();
+    try {
+      request.login(this.conta, this.senha);
+    } catch (ServletException e) {
+      context.addMessage(null, new FacesMessage("Login failed."));
+      return "error";
+    }
+    return "/faces/sistemabancario.xhtml";
+  }*/
+    
     /*Método de validação de login do cliente*/
-    public boolean validaLogin(){
-        return validarlogin.validaConta(conta,senha);
+    public String validaLogin(String conta,String senha){
+        boolean x = validarlogin.validaConta(conta,senha);
+        if (x == true)
+            return "faces/sistemabancario.xhtml";
+        else
+            return "faces/welcomePrimeFaces.xhtml";
     }
     
     public int getAgencia() {

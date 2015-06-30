@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\NewSessionBean.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\dao\GenericDao.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Banco.java
@@ -8,6 +9,7 @@ C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\j
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Pagamento.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Agencia.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\Depositar.java
+C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\ValidarLogin.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Transferencia.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Extrato.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\CompensacaoDeCheques.java
@@ -15,8 +17,35 @@ C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\j
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Operacao.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\Investir.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\exceptions\SaldoNegativoException.java
+C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\ValidarLoginLocal.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\dao\ClienteDao.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Cliente.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\ContaInvestimento.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\VerificarSaldo.java
 C:\Users\Aíquis\Documents\GitHub\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Investimento.java
+=======
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Operacao.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\VerificarSaldo.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\ContaInvestimento.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\dao\ContaDao.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\ValidarLogin.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Cliente.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\dao\ClienteDao.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Pagamento.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Agencia.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\exceptions\SaldoNegativoException.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\Sacar.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\NewSessionBean.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\dao\GenericDao.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\CompensacaoDeCheques.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\Transferencia.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\ValidarLoginLocal.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Banco.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Extrato.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\Investir.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Transferencia.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\Extrato.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\componentes\Depositar.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Investimento.java
+D:\Juan - Uff\TPS2\GIT_BANCARIO\AplicacaoBancaria\AplicacaoBanco-ejb\src\main\java\entidades\Conta.java
+>>>>>>> origin/master

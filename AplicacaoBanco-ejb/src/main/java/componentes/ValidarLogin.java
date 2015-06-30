@@ -27,7 +27,8 @@ public class ValidarLogin implements ValidarLoginLocal {
     public boolean validaConta(String conta, String senha){
         boolean x;
         Query query = em.createNamedQuery("buscaConta");
-        query.setParameter("conta","senha");
+        query.setParameter("conta",conta);
+        query.setParameter("senha", senha);
         this.conta = query.getResultList();
         if (this.conta == null)
             x = false;   
