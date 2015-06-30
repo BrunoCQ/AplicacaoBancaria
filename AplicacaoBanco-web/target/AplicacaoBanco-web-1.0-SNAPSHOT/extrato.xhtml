@@ -6,13 +6,54 @@
                 xmlns:h="http://xmlns.jcp.org/jsf/html">
 
     <ui:define name="title">Banco AJB - Extrato</ui:define>
-    
+
     <ui:define name="content">
         Por favor, selecione o período desejado<br/><br/>
-        De <p:calendar pattern="dd/MM/yyy" /> Até <p:calendar pattern="dd/MM/yyyy" />&nbsp; 
-        <p:commandButton value="OK" action="Submit"/>
-    </ui:define>
+        De <p:calendar pattern="dd/MM/yyy" value="#{historicoBean.dataInicio}"/> Até 
+        <p:calendar pattern="dd/MM/yyyy" value = "#{historicoBean.dataFim}"/>&nbsp; 
+                    <p:commandButton value="OK" action="Submit"/>
+</ui:define>
 
-   
+
+<!--<h:form id="formExtrato">
+
+    <p:dataTable id="tblExtrato" border="1"
+
+                 paginator="true"
+
+                 emptyMessage="Nao existe extrato para esse periodo"
+
+                 value="{historicoBean.dados}" var="e">
+
+        <p:column headerText="Data">
+
+            <h:outputText value="{e.data}"/>
+
+        </p:column>
+
+        <p:column headerText="Valor">
+
+            <h:outputText value="{e.valor}"/>
+
+        </p:column>
+
+        <p:column headerText="Tipo">
+
+            <h:outputText value="{e.Tipo}"/>
+
+        </p:column>
+
+        
+    </p:dataTable>
+
+    <p>
+
+        <p:message for="formExtrato"/>
+
+    </p>
+
+</h:form> 
+
+!-->
 
 </ui:composition>

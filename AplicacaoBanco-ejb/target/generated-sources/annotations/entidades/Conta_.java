@@ -10,7 +10,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 public abstract class Conta_ {
 
 	public static volatile SingularAttribute<Conta, Cliente> cliente;
-	public static volatile SingularAttribute<Conta, Integer> senha;
+	public static volatile SingularAttribute<Conta, String> senha;
 	public static volatile ListAttribute<Conta, ContaInvestimento> contaInvestimentos;
 	public static volatile SingularAttribute<Conta, String> conta;
 	public static volatile SingularAttribute<Conta, Float> saldo;

@@ -22,7 +22,7 @@ public class ValidarLogin implements ValidarLoginLocal {
 
     @PersistenceContext
     private EntityManager em;
-    private List<Conta> conta;
+   
 
     public boolean validaConta(String conta, String senha) {
         boolean x = false;
@@ -37,6 +37,19 @@ public class ValidarLogin implements ValidarLoginLocal {
         return x;
 
     }
+    
+    
+       public Conta obterConta(String conta) {
+        boolean x = false;
+        Conta contaObj = em.find(Conta.class, conta);
+        if (contaObj != null) {
+            return contaObj;
+        } else {
+            return null;
+        }
+
+    }
+    
 }
     /*
      Query query = em.createNamedQuery("buscaConta");

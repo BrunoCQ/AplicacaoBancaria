@@ -9,6 +9,8 @@ import entidades.Conta;
 import javax.ejb.EJB;
 import javax.ejb.Stateful;
 import javax.ejb.Stateless;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -24,6 +26,8 @@ public class Transferencia {
     
 
     public void transferenciaInterna(String contaOrigem, String contaDestino, float valor) {
+        
+        String mensagem = null; mensagem = "Transferencia realizada com sucesso";
         Conta contaOri = em.find(Conta.class, contaOrigem);
         if (contaOri.getSaldo() >= valor) {
             Conta contaDest = em.find(Conta.class, contaDestino);
@@ -34,14 +38,17 @@ public class Transferencia {
                 contaDest.setSaldo(novoSaldoDest);
                 em.persist(contaOri);
                 em.persist(contaDest);
-                System.out.println("Saque efetuado com sucesso");
+                 mensagem = "Transferencia realizada com sucesso";
             }
             else {
-                System.out.println("Conta de destino não existe");
+                 mensagem = "Conta de destino não existe";
             }
         } else {
-            System.out.println("O limite para transferencia é: " + contaOri.getSaldo());
-        }
+            mensagem = "O limite para transferencia é: " + contaOri.getSaldo();
     }
+        
+        
+                    FacesContext.getCurrentInstance().
+                    addMessage("formTrans", new FacesMessage(mensagem));
 
-}
+}}

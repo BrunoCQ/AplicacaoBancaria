@@ -9,6 +9,9 @@
 
     <ui:define name="content">
         Digite os dados abaixo para realizar a transferência:
+        
+        <h:form id="formTrans"> 
+        
         <h:panelGrid columns="2" cellpadding="5">
 
             <p:outputLabel style="font-size: medium" for="nome" value="Nome" />
@@ -24,7 +27,16 @@
             <p:inputText id="valor" value="#{contaBean.valorSaque}"/>
             
         </h:panelGrid>
-         <p:commandButton value="Confirmar"/>
+            
+        <p:commandButton value="Confirmar" action="#{contaBean.transferenciaInt()}"/>
+        
+                    <p>
+
+                <p:message for="formTrans"/>
+
+            </p>
+
+        </h:form> 
     </ui:define>
 
 
