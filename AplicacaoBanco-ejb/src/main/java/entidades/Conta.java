@@ -23,7 +23,8 @@ import javax.persistence.OneToOne;
  * @author Bruno
  */
 @NamedQueries({
-    @NamedQuery(name = "buscaSaldo", query = "select saldo from Conta c where c.conta =:conta"),
+    //@NamedQuery(name = "buscaSaldo", query = "select saldo from Conta c where c.conta =:conta"),
+    @NamedQuery(name="buscaConta", query="select c from Conta c where c.conta=:conta and c.senha=:senha")
 })
 @Entity
 public class Conta implements Serializable {

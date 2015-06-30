@@ -16,12 +16,9 @@ import componentes.VerificarSaldo;
 import java.io.Serializable;
 import javax.enterprise.context.SessionScoped;
 
-/**
- *
- * @author Bruno
- */
+
 @Named(value = "contaBean")
-@SessionScoped
+//@SessionScoped
 public class ContaBean implements Serializable {
 	float saldo;
         String conta;
